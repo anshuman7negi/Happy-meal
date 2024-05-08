@@ -1,0 +1,106 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+@keyframes fallingLeaves {
+    0% {
+        transform: translate(0, 0) rotate(0);
+        top: 0;
+    }
+    50% {
+        transform: translate(0, 0) rotate(720deg);
+    }
+    100% {
+        top: 60%;
+        left: 0;
+    }
+}
+
+@keyframes fallingLeaves4 {
+    0% {
+        transform: translate(0, 0) rotate(0);
+        top: 0;
+    }
+    50% {
+        transform: translate(0, 0) rotate(360deg);
+    }
+    100% {
+        top: 30%;
+        right: 10%;
+    }
+}
+
+@keyframes fallingLeaves3 {
+    0% {
+        transform: translate(0, 0) rotate(0);
+        top: 0;
+    }
+    50% {
+        transform: translate(0, 0) rotate(360deg);
+    }
+    100% {
+        top: 60%;
+    }
+}
+
+.leave1 {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    animation: fallingLeaves 3s linear;
+}
+
+.leave2{
+    position: absolute;
+    top: 60%;
+    left: 0;
+    animation: fallingLeaves 6s linear;
+}
+
+.leave4{
+    position: absolute;
+    top: 30%;
+    right: 10%;
+    animation: fallingLeaves4 8s linear;
+}
+
+.leave3 {
+    top: 60%;
+    animation: fallingLeaves3 8s linear;
+}
+
+.about {
+    background-image: url('./assets/bg.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.menu {
+    background-image: url('./assets/menubg.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.recipeBg {
+    background-image: url('./assets/recipebg.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.lemon{
+    animation: rotateLemon 2s linear;
+}
+
+@keyframes rotateLemon {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(30deg);
+    }
+}
