@@ -73,3 +73,34 @@
     top: 60%;
     animation: fallingLeaves3 8s linear;
 }
+
+.about {
+    background-image: url('./assets/bg.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.menu {
+    background-image: url('./assets/menubg.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.recipeBg {
+    background-image: url('./assets/recipebg.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.lemon{
+    animation: rotateLemon 2s linear;
+}
+
+@keyframes rotateLemon {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(30deg);
+    }
+}

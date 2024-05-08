@@ -27,7 +27,7 @@ const PopularMeal = () => {
 
                 <div className="flex flex-col items-center p-8 gap-4 mt-4 border-2 shadow-lg rounded-3xl">
                     <img src={juice} alt="" className="w-[150px] h-[150px] bg-[#C1F1C6] p-2 rounded-full" />
-                    <p className="font-bold">Juice <br /> <span className="font-light"> (60 dishes)</span></p>
+                    <p className="font-bold">Drinks <br /> <span className="font-light"> (60 dishes)</span></p>
                 </div>
             </div>
         </section>
