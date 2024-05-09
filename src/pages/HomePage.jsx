@@ -11,7 +11,7 @@ import Journey from '../components/Journey'
 const HomePage = () => {
     return (
         <>
-            <div className="grid md:grid-cols-2 py-6 bg-gradient-to-r from-[#fff3de] to-[#fff8ee] relative">
+            <div className="grid md:grid-cols-2 py-6 pt-32 bg-gradient-to-r from-[#fff3de] to-[#fff8ee] relative">
                 <div className="flex flex-col items-center justify-center pl-6 gap-12">
                     <p className="text-3xl lg:text-6xl font-bold sm:text-4xl">
                         it’s not just
