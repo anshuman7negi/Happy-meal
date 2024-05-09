@@ -2,9 +2,9 @@ import { NavLink, Link } from "react-router-dom"
 
 const Navbar = () => {
     return (
-        <nav className="flex justify-between items-center px-10 py-3 font-semibold bg-gradient-to-r from-[#fff3de] via-[#fff8ee] to-[#f8e2bb]">
+        <nav className="flex justify-between items-center px-4 lg:px-10 md:px-8 py-3 font-semibold bg-gradient-to-r from-[#fff3de] via-[#fff8ee] to-[#f8e2bb]">
             <p className="font-bold text-xl">Happy Meal</p>
-            <ul className="flex items-center gap-6">
+            <ul className="hidden sm:flex items-center gap-6">
                 <li>
                     <NavLink to="/" className={({ isActive }) =>
                         `${isActive ? "text-white bg-green-500 " : "text-black"} px-6 py-2 rounded-tl-full rounded-br-full hover:bg-green-500`

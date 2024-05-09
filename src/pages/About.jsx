@@ -3,24 +3,25 @@ import aboutFood from '../assets/aboutFood.svg'
 const About = () => {
     return (
         <section>
-            <div className="about h-screen flex flex-col justify-center items-center gap-4">
-                <p className="font-bold text-6xl">
+            <div className="relative about h-screen flex flex-col justify-center items-center gap-4 z-20">
+                <p className="font-bold text-white tracking-wider text-3xl sm:text-6xl z-50">
                     Best food for
                     your taste
                 </p>
-                <p className="font-semiBold text-center w-1/3 text-xl">
+                <p className="font-semiBold text-center md:w-1/3 text-xl z-50 text-white">
                     Discover delectable cuisine and unforgettable moments in our welcoming, culinary haven.
                 </p>
-                <div className="flex gap-4 mt-4">
+                <div className="flex gap-4 mt-4 z-50">
                     <button className="bg-red-600 text-white font-semibold px-4 py-2 rounded-full">Book A Table</button>
-                    <button className="hover:bg-red-600 hover:text-white border-2  font-semibold px-4 py-2 rounded-full">Explore Menu</button>
+                    <button className="hover:bg-red-600 text-white border-2  font-semibold px-4 py-2 rounded-full">Explore Menu</button>
                 </div>
+                <div className="bg-gray-600 absolute top-0 bottom-0 left-0 right-0 opacity-80 z-0"></div>
             </div>
 
-            <div className="grid grid-cols-2 p-8">
+            <div className="grid md:grid-cols-2 p-8 gap-32 sm:gap-4">
                 <div className="relative flex items-center">
-                    <img src={aboutFood} alt="food" className="h-3/4 z-0" />
-                    <div className="absolute right-1/4 top-[55%] shadow-xl z-20 bg-[#474747] text-white flex flex-col gap-8 px-12 py-6 rounded-lg">
+                    <img src={aboutFood} alt="food" className=" sm:h-3/4 z-0" />
+                    <div className="absolute right-0 md:right-0 top-[60%] md:top-[50%] shadow-xl z-20 bg-[#474747] text-white flex flex-col gap-8 px-4 sm:px-8 py-6 rounded-lg">
                         <p className="font-semiBold text-2xl">Come and visit us</p>
 
                         <div className="flex flex-col gap-3">
@@ -34,19 +35,19 @@ const About = () => {
                     <h3 className="font-bold text-5xl">
                         We provide healthy food for your family.
                     </h3>
-                    <p className="w-3/4">
+                    <p className="lg:w-3/4">
                         Our story began with a vision to create a unique dining experience that merges fine dining, exceptional service, and a vibrant ambiance.
                         Rooted in city's rich culinary culture, we aim to honor our local roots while infusing a global palate.
                     </p>
                 </div>
             </div>
 
-            <div className="flex items-center flex-col gap-12 pb-8">
-                <h3 className="font-semibold text-4xl ">
+            <div className="flex items-center flex-col gap-12 pb-8 pt-8">
+                <h3 className="font-bold text-3xl md:text-4xl ">
                     What Our Customers Say
                 </h3>
 
-                <div className="flex gap-4">
+                <div className="flex flex-col md:flex-row gap-4">
 
                     <div className="flex flex-col gap-4 py-4 px-6 bg-[#F9F9F7] rounded-lg">
                         <h4 className="text-[#AD343E] font-semibold">“The best restaurant”</h4>
