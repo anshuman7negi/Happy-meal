@@ -26,11 +26,11 @@ const Navbar = () => {
 
     return (
         <nav className="fixed top-0 left-0 right-0 flex justify-between items-center px-4 lg:px-10 md:px-8 py-3 font-semibold bg-gradient-to-r from-[#fff3de] via-[#fff8ee] to-[#f8e2bb] z-[99]">
-            <p className="font-bold text-xl">
+            <h1 className="font-bold text-xl">
                 <NavLink to="/">
                     Happy Meal
                 </NavLink>
-            </p>
+            </h1>
 
             <ul className={`sm:flex items-center gap-6 ${isHamburgerClose ? "bg-[#f8e2bb] rounded-md shadow-lg border-2 border-[#fff8ee] flex flex-col gap-8 pt-16 pl-8 w-3/5 fixed top-[9%] bottom-0 left-0 z-[99]" : "hidden"}`}>
                 <li>
