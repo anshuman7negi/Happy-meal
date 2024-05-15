@@ -1,12 +1,13 @@
+import { lazy, Suspense } from 'react'
 import meal from '../assets/homemeal.svg'
 import '../index.css'
 import leave1 from '../assets/leave1.svg'
 import leave2 from '../assets/leave2.svg'
 import leave3 from '../assets/leave3.svg'
 import leave4 from '../assets/leave4.svg'
-import PopularMeal from '../components/PopularMeal'
-import SpecialDishes from '../components/SpecialDishes'
-import Journey from '../components/Journey'
+const PopularMeal =  lazy(()=> import('../components/PopularMeal'))
+const SpecialDishes= lazy(()=> import('../components/SpecialDishes'));
+const Journey = lazy(()=> import('../components/Journey'));
 
 const HomePage = () => {
     return (
@@ -21,16 +22,16 @@ const HomePage = () => {
                     <button className="font-semibold bg-red-600 text-white px-6 py-3 rounded-full">Order Now</button>
                 </div>
                 <div className="relative flex items-center justify-center z-50">
-                    <img src={meal} alt="jeera rice" className="w-4/5 h-4/5 pt-6 z-50" />
-                    <img src={leave1} alt="leaves" className="absolute leave1 z-20" />
-                    <img src={leave2} alt="leaves" className="absolute z-20 leave2" />
-                    <img src={leave4} alt="leaves" className="absolute z-20 leave4" />
+                    <img src={meal} alt="jeera rice" className="w-4/5 h-4/5 pt-6 z-50" loading="lazy" />
+                    <img src={leave1} alt="leaves" className="absolute leave1 z-20" loading="lazy" />
+                    <img src={leave2} alt="leaves" className="absolute z-20 leave2" loading="lazy"/>
+                    <img src={leave4} alt="leaves" className="absolute z-20 leave4" loading="lazy"/>
                 </div>
-                <img src={leave3} alt="leaves" className="absolute z-20 leave3 w-1/2 md:w-1/4" />
+                <img src={leave3} alt="leaves" className="absolute z-20 leave3 w-1/2 md:w-1/4" loading="lazy" />
             </div>
-            <PopularMeal />
-            <SpecialDishes />
-            <Journey />
+            <Suspense fallback={<h1>Loadin...</h1>}> <PopularMeal /> </Suspense>
+            <Suspense fallback={<h1>Loadin...</h1>}> <SpecialDishes /> </Suspense>
+            <Suspense fallback={<h1>Loadin...</h1>}> <Journey /> </Suspense>
         </>
     )
 }

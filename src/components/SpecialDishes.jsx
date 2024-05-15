@@ -10,7 +10,7 @@ const SpecialDishes = () => {
 
             <div className="flex flex-col lg:flex-row gap-4 pt-8">
                 <div className="p-8 flex flex-col shadow-lg border-2 rounded-3xl">
-                    <img src={dishe1} alt="allo pata chat" className="w-full" />
+                    <img src={dishe1} alt="allo pata chat" className="w-full" loading="lazy"/>
                     <p className="font-bold mt-2 text-xl">Fattoush salad</p>
                     <p>Discription of the item</p>
                     <div className="flex justify-between items-center mt-3">
@@ -20,7 +20,7 @@ const SpecialDishes = () => {
                 </div>
 
                 <div className="p-8 flex flex-col shadow-lg border-2 rounded-3xl">
-                    <img src={eggSalad} alt="allo pata chat" className="w-full" />
+                    <img src={eggSalad} alt="allo pata chat" className="w-full" loading="lazy" />
                     <p className="font-bold mt-2 text-xl">Fattoush salad</p>
                     <p>Discription of the item</p>
                     <div className="flex justify-between items-center mt-3">
@@ -31,7 +31,7 @@ const SpecialDishes = () => {
 
 
                 <div className="p-8 flex flex-col shadow-lg border-2 rounded-3xl">
-                    <img src={salad} alt="allo pata chat" className="w-full" />
+                    <img src={salad} alt="allo pata chat" className="w-full" loading="lazy" />
                     <p className="font-bold mt-2 text-xl">Fattoush salad</p>
                     <p>Discription of the item</p>
                     <div className="flex justify-between items-center mt-3">
@@ -41,7 +41,7 @@ const SpecialDishes = () => {
                 </div>
 
                 <div className="p-8 flex flex-col shadow-lg border-2 rounded-3xl">
-                    <img src={eggSalad} alt="allo pata chat" className="w-full" />
+                    <img src={eggSalad} alt="allo pata chat" className="w-full" loading="lazy" />
                     <p className="font-bold mt-2 text-xl">Fattoush salad</p>
                     <p>Discription of the item</p>
                     <div className="flex justify-between items-center mt-3">

@@ -15,18 +15,18 @@ const Recipes = lazy(() => import('./pages/Recipes'))
 function App() {
 
   return (
-    <Suspense fallback={ <span class="loader"></span>}>
+    <>
       <Navbar />
       <Routes>
-        <Route path='' element={<HomePage />} />
-        <Route path='/login' element={<Login />} />
-        <Route path='/signup' element={<Signup />} />
-        <Route path='/about' element={<About />} />
-        <Route path='/menu' element={<Menu />} />
-        <Route path='/recipes' element={<Recipes />} />
+        <Route path='' element={ <Suspense fallback={<h1>Loadin...</h1>}> <HomePage /> </Suspense>} />
+        <Route path='/login' element={<Suspense fallback={<h1 className="h-screen m-auto">Loadin...</h1>}> <Login /></Suspense>} />
+        <Route path='/signup' element={<Suspense fallback={<h1 className="h-screen m-auto">Loadin...</h1>}><Signup /> </Suspense>} />
+        <Route path='/about' element={<Suspense fallback={<h1 className="h-screen m-auto">Loadin...</h1>}><About /></Suspense>} />
+        <Route path='/menu' element={ <Suspense fallback={<h1  className="h-screen m-auto">Loadin...</h1>}><Menu /></Suspense>} />
+        <Route path='/recipes' element={ <Suspense fallback={<h1  className="h-screen m-auto">Loadin...</h1>}><Recipes /></Suspense>} />
       </Routes>
       <Footer />
-    </Suspense>
+    </>
   )
 }
 
