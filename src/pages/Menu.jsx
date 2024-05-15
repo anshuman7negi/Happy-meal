@@ -19,7 +19,7 @@ const Menu = () => {
 
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 px-4 lg:px-12 pt-12 gap-4 lg:gap-6">
                 <div className="flex flex-col items-center border-2 rounded-2xl gap-4">
-                    <img src={egg} alt="egg" className="w-full" />
+                    <img src={egg} alt="egg" className="w-full" loading="lazy" />
                     <p className="text-[#AD343E] font-bold text-lg">$9.99</p>
                     <p className="font-bold text-xl">Fried Eggs</p>
                     <p className="text-center pb-4">
@@ -28,7 +28,7 @@ const Menu = () => {
                 </div>
 
                 <div className="flex flex-col items-center border-2 rounded-2xl gap-4">
-                    <img src={egg} alt="egg" className="w-full" />
+                    <img src={egg} alt="egg" className="w-full" loading="lazy" />
                     <p className="text-[#AD343E] font-bold text-lg">$9.99</p>
                     <p className="font-bold text-xl">Fried Eggs</p>
                     <p className="text-center pb-4">
@@ -37,7 +37,7 @@ const Menu = () => {
                 </div>
 
                 <div className="flex flex-col items-center border-2 rounded-2xl gap-4">
-                    <img src={egg} alt="egg" className="w-full" />
+                    <img src={egg} alt="egg" className="w-full" loading="lazy" />
                     <p className="text-[#AD343E] font-bold text-lg">$9.99</p>
                     <p className="font-bold text-xl">Fried Eggs</p>
                     <p className="text-center pb-4">
@@ -46,17 +46,7 @@ const Menu = () => {
                 </div>
 
                 <div className="flex flex-col items-center border-2 rounded-2xl gap-4">
-                    <img src={egg} alt="egg" className="w-full" />
-                    <p className="text-[#AD343E] font-bold text-lg">$9.99</p>
-                    <p className="font-bold text-xl">Fried Eggs</p>
-                    <p className="text-center pb-4">
-                        Made with eggs, lettuce, salt, oil and other ingredients.
-                    </p>
-                </div>
-
-
-                <div className="flex flex-col items-center border-2 rounded-2xl gap-4">
-                    <img src={egg} alt="egg" className="w-full" />
+                    <img src={egg} alt="egg" className="w-full" loading="lazy" />
                     <p className="text-[#AD343E] font-bold text-lg">$9.99</p>
                     <p className="font-bold text-xl">Fried Eggs</p>
                     <p className="text-center pb-4">
@@ -66,7 +56,17 @@ const Menu = () => {
 
 
                 <div className="flex flex-col items-center border-2 rounded-2xl gap-4">
-                    <img src={egg} alt="egg" className="w-full" />
+                    <img src={egg} alt="egg" className="w-full" loading="lazy" />
+                    <p className="text-[#AD343E] font-bold text-lg">$9.99</p>
+                    <p className="font-bold text-xl">Fried Eggs</p>
+                    <p className="text-center pb-4">
+                        Made with eggs, lettuce, salt, oil and other ingredients.
+                    </p>
+                </div>
+
+
+                <div className="flex flex-col items-center border-2 rounded-2xl gap-4">
+                    <img src={egg} alt="egg" className="w-full" loading="lazy"/>
                     <p className="text-[#AD343E] font-bold text-lg">$9.99</p>
                     <p className="font-bold text-xl">Fried Eggs</p>
                     <p className="text-center pb-4">
